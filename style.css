@@ -444,7 +444,9 @@ main .container{
 
   .page03 .workpanel{
     font-size: 12px;
-    height: 450px;
+    /* height: 650px;
+     */
+     height: auto;
     margin-bottom: 30px;
   }
 }
