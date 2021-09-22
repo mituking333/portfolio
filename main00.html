@@ -1,0 +1,246 @@
+<!------------------------------------------>
+<!-- 2021/08/27 Kamoda Portfolio-->
+<!------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>かもだのポートフォリオサイト</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="menu.css"> -->
+    <link rel="icon" href="img/favicon.png".ico">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<!-- header -->
+    <header id="header">
+        <div class="container">
+            <img src="img/bussines02.jpg">
+            <!-- スマホ版ハンバーガーメニュー -->
+            <div class="sp-menu">
+                <span class="material-icons" style="color:white; background-color: gray;" id="open">menu</span>
+            </div>
+
+            <!-- ハンバーガーメニュー押下時のメニュー -->
+            <div class="overlay">
+                <span class="material-icons" style="color:white; background-color: gray;" id="close">close</span>
+                <nav>
+                <ul >
+                    <li onclick="myFunction(event)"><a href="#header">Top</a></li>
+                    <li onclick="myFunction(event)"><a href="#profile">Profile</a></li>
+                    <li onclick="myFunction(event)"><a href="#skillset">Skillset</a></li>
+                    <li onclick="myFunction(event)"><a href="#works">Works</a></li>
+                    <li onclick="myFunction(event)"><a href="#contact">Contact</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <!-- <h1 title ="☆自己紹介☆">Portfolio</h1>
+            <p>ここはエンジニアKamodaのポートフォリオサイトです。<br>
+                これまでに手がけた制作物、身につけたスキルをまとめています。<br>
+                あなたに、私のことをもっと深く知ってほしいと思って作りました。
+            </p> -->
+        </div>
+
+    </header>
+
+
+<!-- main -->
+    <main>
+        <!-- 写真・自己紹介 -->
+        <div class="container" id="profile">
+            <h3 style="text-align: center;">PROFILE</h3>
+            <div class="page01">
+                <div>
+                    <img 
+                    src="img/kamoda.png" 
+                    alt="鴨田の写真"
+                    width="300px"
+                    style="border-radius:50%">
+                </div>
+                <div class="Profile">
+                    <ul>
+                        <li>名前：鴨田　三樹　３４歳</li>
+                        <li>職業：プログラマー『C#』</li>
+                        <li>経歴：高校卒業後、中小企業（アカダ電器製作所）へ入社。<br>プログラマー、SEを経験</li>
+                        <li>目標：WEBプログラマーになる事</li>
+                        <li>趣味：バスケット、家庭菜園
+                        <li>その他：HTML／CSS見習い</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- スキル -->
+            <div class="page02" id="skillset">
+              <h3 style="text-align: center;">SKILLSET</h3>
+                <!-- 開発言語 -->
+                <div class="slkillpanel">
+                    <div class="skillbox">
+                        <span style="font-weight:bold; color:black;"  class=" boxname fas fa-desktop fa-2x my-white">
+                            フロントエンド
+                        </span><br>
+                        <ul>
+                            <li>技術</li>
+                            <li>経験年数</li>
+                            <li>スキル</li>
+                        </ul>
+                        <ul>
+                            <li>C#</li>
+                            <li>10年</li>
+                            <li>★★★★☆</li>
+                        </ul>
+                        <ul>
+                            <li>Access</li>
+                            <li>2年</li>
+                            <li>★☆☆☆☆</li>
+                        </ul>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>6月～</li>
+                            <li>見習い</li>
+                        </ul>
+                    </div> 
+
+                    <div class="skillbox">
+                        <span style="font-weight:bold; color:black;"  class="boxname fas fa-coins fa-2x my-white">
+                            DB
+                        </span><br>
+                        <ul>
+                            <li>技術</li>
+                            <li>経験年数</li>
+                            <li>スキル</li>
+                        </ul>
+                        <ul>
+                            <li>Postgres</li>
+                            <li>10年</li>
+                            <li>★★★★☆</li>
+                        </ul>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>3年</li>
+                            <li>★★☆☆☆</li>
+                        </ul>
+                        <ul>
+                            <li>---</li>
+                            <li>---</li>
+                            <li>---</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slkillpanel">
+                    <div class="skillbox">
+                        <span style="font-weight:bold; color:black;"  class="boxname fas fa-desktop fa-2x my-white">
+                            その他
+                        </span><br>
+                        <ul>
+                            <li>技術</li>
+                            <li>経験年数</li>
+                            <li>スキル</li>
+                        </ul>
+                        <ul>
+                            <li>SE</li>
+                            <li>7年</li>
+                            <li>---</li>
+                        </ul>
+                        <ul>
+                            <li>保守</li>
+                            <li>15年</li>
+                            <li>---</li>
+                        </ul>
+                        <ul>
+                            <li>ﾄﾗﾌﾞﾙｼｭｰﾃｨﾝｸﾞ</li>
+                            <li>15年</li>
+                            <li>---</li>
+                        </ul>
+                    </div> 
+                    <div class="skillbox">
+                        <span style="font-weight:bold; color:black;"  class="boxname far fa-edit fa-2x my-white">
+                            習得したい技術
+                        </span><br>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>---</li>
+                            <li>---</li>
+                        </ul>
+                        <ul>
+                            <li>Js/JQuery</li>
+                            <li>---</li>
+                            <li>---</li>
+                        </ul>
+                        <ul>
+                            <li>PHP</li>
+                            <li>---</li>
+                            <li>---</li>
+                        </ul>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>---</li>
+                            <li>---</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 仕事・成果物 -->
+            <div class="page03" id="works">
+                <h3 style="text-align: center;">WORKS</h3>
+                <div class="workpanel">
+                    <p>
+                        ＜ポートフォリオを作成するまで＞<br>
+                        ・6月～YouTubeでお手本・身に着ける方法を検索（しまぶーのIT大学）<br>
+                        ・7月～最低限のスキルHTML/CSS(Progate、ドットインストール)の学習を実施<br>
+                        　　（毎日平日は2時間、休日は4～6時間勉強）<br>
+                        ・9月～HTML/CSSを使用したポートフォリオ作成、模写コーディングを実施<br>
+                        ・9月～Visual Studio Codeで開発、Githubへページアップ<br>
+                        ＜苦戦した点＞<br>
+                        ・ポートフォリオの完成度（どういった物を掲載するのか）<br>                        
+                        ・FlexBoxを考慮した設計。使い方の説明はあったが、使いどころ・どういう時に<br>
+                        　使うかを考えながら説明してるサイトが少なかった。<br>
+                        ＜使用したツール＞<br>
+                        ・imagedownloader・・・ウェブページ全体の画像を一括でダウンロード<br>
+                        ・Page Ruler Redux・・・ウェブページの画像や位置のサイズをピクセル単位で測る<br>
+                        ・GoFullPage・・・ウェブページ全体のスクリーンショットを画像保存<br>
+                        ＜お手本にしたページ＞<br>
+                        ・https://www.youtube.com/channel/UCfF4y5toq2G_<br>
+                          pV2wzP7IGdA<br>
+                        ・https://www.youtube.com/c/shimabu_it<br>
+                        ・https://www.youtube.com/c/manabuch<br>
+                    </p>
+                </div>
+
+                <p>模写コーディング</p>
+
+                <ul class="copylp">
+                    <li><a href="main01.html"><img src="img/Page_01.png" height="200px"></a></li>
+                    <li><a href="main02.html"><img src="img/Page_02.png"height="200px"></a></li>
+                    <li><a href="main03.html"><img src="img/Page_03.png"height="200px"></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <h3>CONTACT</h3>
+        <div　class="applink">
+            <a href="#" ><span class="fab fa-twitter fa-2x my-white"></span></a>
+            <a href="https://it-it.facebook.com/people/%E9%B4%A8%E7%94%B0-%E3%81%BF%E3%81%A4%E3%81%8D/100004219593148/" ><span class="fab fa-facebook fa-2x  my-white"></span></a>
+            <a href="#" ><span class="fab fa-algolia fa-2x  my-white"></span></a>
+        </div>
+        
+        <div id="page_top"><a href="#"></a></div>
+
+        <small class="copyright">Copyright © KAMODA portfolio 2021</small>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

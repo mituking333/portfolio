@@ -1,0 +1,409 @@
+body {
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: rgb(0, 0, 0);
+    font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+li{
+    list-style: none;
+}
+a {
+    text-decoration:none; 
+    color: black;
+}
+h1, h2 {
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+img{
+    vertical-align: bottom;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color:white;
+}
+.header-cover{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color:white;
+    z-index: 1000;
+}
+.header-nav{
+    text-align: left;
+    background-color: white;
+    /* メニューが無い時 */
+    transform: translateY(-110%);
+    transition: 0.5s;
+    z-index: 10;
+}
+.header-menu li{
+    padding: 18px 0px;
+    border-bottom: 1px solid gray;
+    color: black;
+    padding-left: 8px;
+}
+.header-menu li a{
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    font-size: 14px;
+}
+.header-menu li a:hover{
+    text-decoration: underline;
+}
+.headeer-icons .fab{
+    padding: 12px 10px;
+}
+.headeer-icons {
+    border-bottom: 1px solid gray;
+}
+
+/* ---------------------------------------------- */
+/* チェックBOX */
+/* ---------------------------------------------- */
+.drawer-btn:checked ~ .header-nav{
+    /* チェックが付いたら元の位置に表示 */
+    transform: translateY(10%);
+    
+}
+.drawer-btn{
+    position: absolute;
+    right: 18px;
+    top:18px;
+    transform: scale(1.5);
+    opacity: 0;
+    z-index: 2000;
+}
+header img{
+    height: 25px;
+    width: 100px;
+    padding-top: 15px;
+}
+header .fas{
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+/* ---------------------------------------------- */
+/* 右サイド部分 */
+/* ---------------------------------------------- */
+.sidebar{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    right: 0;
+    /* background-color: coral; */
+}
+.sidecontents{
+    padding-left: 20%;
+}
+.sidecontents>img{
+    width: 90px;
+    height: 22px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+}
+.sidecontents li{
+    color: #000;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    font-size: 14px;
+    padding: 10px 0px
+}
+.sidecontents li a:hover{
+    text-decoration: underline;
+}
+.side-icons .fab{
+    padding: 45px 10px 0px 0px;
+    opacity: 1;
+}
+.side-icons .fab:hover{
+    opacity: 0.5;
+}
+
+/* ---------------------------------------------- */
+/* メイン部分 */
+/* ---------------------------------------------- */
+.wrapper .contents{
+    /* メインコンテンツ部分を80%へ */
+    width: 80%;
+    /* background-color: darkblue; */
+}
+.contents>img{
+    width: 100%;
+}
+.message-content{
+    text-align: center;
+}
+/* MESSAGE */
+.message-content>h1{
+    padding: 80px 0 20px 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 3px solid #000;
+    /* background-color: darkkhaki; */   
+}
+/* テキスト */
+.message-text{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    text-align: left;
+    /* background-color: darkcyan; */
+}
+
+.img-content .flex{
+    display: flex;
+}
+.img-content .flex>img{
+    width: 33.333%;
+}
+.img-content .imgnormal{
+    width: 100%;
+}
+
+/* ---------------------------------------------- */
+/* BRAND */
+/* ---------------------------------------------- */
+.brand-content{
+    text-align: center;
+    
+}
+.brand-content>h1{
+    padding: 80px 0 20px 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 3px solid #000;
+    /* background-color: darkkhaki; */   
+}
+.brand-content{
+    width: 80%;
+    /* width: 500px; */
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+.brand-content .flex{
+    display: flex;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #a0a0a0;
+}
+.items img{
+    width:100%;
+}
+.brand-content .items{
+    /* display: flex; */
+    width: 25%;
+    padding: 0 60px 0 60px;
+    /* background-color: plum; */
+}
+.brand-content .items p{
+    text-align: left;
+}
+
+/* ---------------------------------------------- */
+/* PROJECT */
+/* ---------------------------------------------- */
+.project-content{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.project-content .flex{
+    padding-bottom: 55px;
+    border-bottom: 1px solid #a0a0a0;
+}
+.project-content>h1{
+    padding: 80px 0 20px 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 3px solid #000;
+    /* background-color: darkkhaki; */   
+}
+
+.project-content .items{
+    display: flex;
+    
+}
+.project-content img{
+    width: 370px;
+    height: 225px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+}
+.project-content p{
+    display: block;
+    width: 70%;
+    /* background-color: plum; */
+    text-align: left;
+}
+
+/* ---------------------------------------------- */
+/* COMPANY */
+/* ---------------------------------------------- */
+.company-content{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: plum; */
+}
+.company-content .items{
+    padding-bottom: 200px;
+    /* border-bottom: 1px solid #a0a0a0; */
+}
+.company-content>h1{
+    padding: 80px 0 20px 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 3px solid #000;
+    /* background-color: darkkhaki; */   
+}
+.company-content .items{
+    display: flex;
+}
+
+.company-content .items ul{
+    text-align: left;
+    width: 40%;
+}
+.company-content .mapbox{
+    width: 60%;
+    background-color: powderblue;
+    position: relative;
+}
+iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------- */
+.footer-content{
+    text-align: center;
+    width: 80%;
+    /* margin: 0 auto; */
+    /* background-color: plum; */
+}
+.footer-content p{
+    padding-bottom: 60px;
+}
+.footer-content a{
+    color: blue;
+}
+
+/* ---------------------------------------------- */
+/* メディアクエリ */
+/* ---------------------------------------------- */
+/* 800px以下の画面幅に効かせたい時*/
+/* @media (max-width: 834px) { */
+@media (max-width: 780PX) {
+    .sidebar{
+        width: 0%;
+    }
+    .wrapper .contents{
+        /* メインコンテンツ部分を80%へ */
+        width: 100%;
+        /* background-color: darkblue; */
+    }
+    /* テキスト */
+    .message-text{
+        width: 95%;
+    }
+    .img-content .flex>img{
+        width: 100%;
+    }
+    .sidecontents{
+        display: none;
+    }
+    .img-content .flex{
+        display: block;
+    }
+
+    /* ブランド */
+    .brand-content .flex{
+        display: block;
+    }
+    .brand-content .items{
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .brand-content .items p{
+        padding-bottom: 30px;
+    }
+
+    /* プロジェクト */
+    .project-content{
+        margin: 0px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .project-content .items{
+        display: block; 
+
+    }
+    .project-content img{
+        padding:0px;
+        margin: 0 auto 20px;
+        width: 300px;
+        /* height: 180; */
+        /* width: 80%; */
+    }
+    .project-content p{
+        width: 300px;
+        margin: 0 auto 20px;
+    }
+
+    .company-content .items{
+        display: block;
+    }
+    .company-content .items ul{
+        text-align: left;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .company-content .mapbox{
+        width: 100%;
+        background-color: powderblue;
+        height: 225px;
+    }
+    iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        /* width: 100%;
+        height: 100%; */
+    }
+    /* ---------------------------------------------- */
+    /* FOOTER */
+    /* ---------------------------------------------- */
+    .footer-content{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        /* background-color: plum; */
+    }
+  }
+  @media(min-width:780px) {
+    header{
+        display: none;
+        background-color: violet;
+    }
+}

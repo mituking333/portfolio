@@ -1,0 +1,95 @@
+body {
+    color: #2b2a27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+main h1,p{
+    text-align: center;
+}
+
+main h1{
+    font-size: 30px;
+    padding-top: 90px;
+    padding-bottom: 24px;
+}
+main p{
+    padding-bottom: 84px;
+}
+
+.mainvisual img{
+    width: 100%;
+    height: 100vh;
+    /* background-size:cover; */
+    /* ▽ボックスに合わせた画像サイズの調節 */
+    object-fit: cover;
+    /* 画像一部の表示位置を指定する場合などに使用 */
+    object-position: center top;
+}
+
+.cooking{
+    display: flex;
+}
+/*
+「calc(100%/3);」で、widthの値が3等分になるよう計算する。
+※「calc」は、割り切れない数で均等に配置したい場合などに便利。
+*/
+.cooking li {
+    width: calc(100%/3);
+  }
+.cooking li img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /* vertical-align: bottom; */
+}
+
+main .resipi{
+    text-align: center;
+    /* display: block; */
+}
+main .btn {
+    display: inline-block;
+    border: solid 1px #2b2a27;
+    font-size: 0.875rem;
+    padding: 18px 60px;
+    text-decoration: none;
+    margin-top:64px;
+    margin-bottom: 100px;
+}
+
+/* --------------------------------------- */
+/* footer */
+/* --------------------------------------- */
+footer .foot{
+    display: block;
+    text-align: center;
+}
+footer a{
+    color: black;
+}
+footer .sns{
+    display: flex;
+    justify-content: center;
+}
+
+footer .sns li{
+    display:inline-block;
+    margin: 20px 8px;
+}
+
+/* copyrightエリア */
+footer .copyright{
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  /* 800px以下の画面幅に効かせたい時*/
+/* @media (max-width: 834px) { */
+@media (max-width: 834px) {
+    .cooking{
+        display: block;       
+    }
+    .cooking li {
+        width: 100%;
+      }
+  }

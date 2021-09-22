@@ -1,0 +1,416 @@
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    font-size: 0.875rem;
+}
+p{
+    display: inline-block;
+    letter-spacing: 0.2em;
+}
+li{
+    list-style: none;
+}
+h1{
+    letter-spacing: 0.2em;
+    /* background-color:darkgray; */
+    font-size: 2.25rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+a {
+    text-decoration:none; 
+    color: black;
+}
+/* ---------------------------------------------- */
+/* ヘッダーエリア */
+/* ---------------------------------------------- */
+header{
+    background-color: rgb(238, 232, 232);
+    width: 100%;
+    /* height: 80px; */
+    /* height: 100vh; */
+}
+header h1{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: normal;
+    width: 130px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /* background-color: burlywood; */
+    margin-left: 325px;
+    align-items: center;
+}
+header .header-left{
+    display: flex;
+}
+header .head-nav{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: darkred; */
+    width: 370px;
+    /* max-width: 400px; */
+}
+.header-left li:hover{
+    cursor:pointer;
+}
+.btn{
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.75rem;
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+}
+
+/* ---------------------------------------------- */
+/* 写真 */
+/* ---------------------------------------------- */
+.mainimg img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+    /* margin-bottom: 110px; */
+}
+
+/* ---------------------------------------------- */
+/* ニュース */
+/* ---------------------------------------------- */
+/* 「NEWS」 */
+/* スペース */
+.news.wrapper{
+    /* ★ max-width ★ */
+    width: 100%;
+    max-width: 1032px;
+    margin: 120px auto;
+    letter-spacing: 5px;
+}
+/* ニュース */
+main .news{
+    width: 100%;
+}
+.newsflexs {
+    padding-top: 10px;
+}
+.news .flex p{
+    letter-spacing: normal;
+}
+.newstitle2{
+    display: inline-block;
+}
+.news .flex{
+    display: flex;
+}
+.news .flex li{
+    height: 80px;
+    width: 333px;
+}
+.flex li:nth-child(2){
+    
+    padding-left: 16px;
+    border-left: solid 1px #000;
+}
+.flex li:nth-child(3){
+    padding-left: 16px;
+    border-left: solid 1px #000;
+}
+
+main .newstmp{
+    background-color: black;
+    color:white;
+    padding: 4px;
+    margin-left: 8px;
+}
+
+/* ---------------------------------------------- */
+/* ABOUT */
+/* ---------------------------------------------- */
+.about{
+    margin-top: 132px;
+}
+.about .flex{
+    display: flex;
+}
+.about .img{
+    width: 55%;
+}
+.about .img img{
+    width: 100%;
+    height: 400px;
+    /* ▽ボックスに合わせた画像サイズの調節 */
+    object-fit: cover;
+    /* 画像一部の表示位置を指定する場合などに使用 */
+    object-position: center top;
+}
+.about .text{
+    width: 45%;
+    margin-top:165px;
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 30px;
+    /* background-color: bisque; */
+}
+
+/* ---------------------------------------------- */
+/* BUISINESS */
+/* ---------------------------------------------- */
+.buisiness.wrapper{
+    /* ★ max-width ★ */
+    width: 100%;
+    max-width: 1032px;
+    margin: 120px auto;
+    /* background-color: coral; */
+}
+
+.buisiness .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+.buisiness .flex p{
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+.buisiness .left{
+    width: 45%;
+}
+.buisiness .right{
+    width: 45%;
+}
+.buisiness img{
+    width: 368px;
+    height: 230px;
+    max-width: 100%;
+}
+.buisiness .left .item:nth-child(1){
+    margin-top: 96px;
+}
+.buisiness .item:nth-child(1){
+    margin-bottom: 50px;
+}
+
+/* ---------------------------------------------- */
+/* COMPANY */
+/* ---------------------------------------------- */
+
+.company .wrapper{
+    width: 100%;
+    max-width: 1032px;
+    height: 750px;
+    margin: 0px auto;
+    margin-top: 120px;
+}
+.company .whitebord{
+    width: 568px;
+    /* width: 100%; */
+    /* height: 617px; */
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 32px;
+    padding-left: 58px; 
+    background-color: white;
+    position: absolute;
+    /* margin-bottom: 132px; */
+}
+
+.company dt {
+    /* 左に寄せる */
+    float: left ;
+    /* 後続の左寄せを解除 */
+    clear: left ;
+    margin-right:10px;
+    width: 80px ;
+    /* letter-spacing: 0.1em; */
+    line-height: 2;
+}
+.company dd {
+    float: left ;
+    margin-left: 10px ;
+    /* letter-spacing: 0.1em; */
+    line-height: 2;
+}
+.company .add {
+    margin-left: 20%;
+}
+.company .img {
+    width: 100%;
+    position: absolute;
+    top: 115px;
+    right: -500px;
+}
+.company .img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ---------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------- */
+footer{
+    background-color: white;
+}
+footer .wrapper{
+    width: 100%;
+    max-width: 1032px;
+    /* height: 220px; */
+    margin: 0px auto;
+}
+footer .float{
+    display: flex;
+    justify-content: space-between;
+}
+footer .left-text{
+    padding-top: 80px;
+}
+footer .right-text{
+    padding-top: 45px;
+    line-height: 20px;
+}
+footer .copyright{
+    margin-top: 50px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 15px;
+    font-size: 0.625rem;
+    letter-spacing: normal;
+}
+
+/* ---------------------------------------------- */
+/* 下線 （共通エリア）*/
+/* ---------------------------------------------- */
+.underline span {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+
+/* ---------------------------------------------- */
+/* メディアクエリ */
+/* ---------------------------------------------- */
+/* 800px以下の画面幅に効かせたい時*/
+/* @media (max-width: 834px) { */
+@media (max-width: 834px) {
+/* ---------------------------------------------- */
+    /* header */
+/* ---------------------------------------------- */
+header .header-left{
+        display: block;
+    }
+    header h1{
+        margin:0px;
+    }
+    .btn{
+        display: none;
+    }
+    
+/* ---------------------------------------------- */
+    /* news */
+/* ---------------------------------------------- */
+    .news .flex{
+        display: block;
+    }
+    .news>div{
+        padding-left: 16px;  
+    }
+    .news .flex li{
+        padding-left: 0px;
+        border-left:none
+    }
+
+/* ---------------------------------------------- */
+    /* buisiness */
+/* ---------------------------------------------- */
+    .buisiness .flex{
+        margin: 0px;
+        display: block;
+    }
+    .buisiness>div{
+        padding-left: 16px;  
+        padding-right: 16px;  
+    }
+    .buisiness .left .item:nth-child(1) {
+        margin: 0px;   
+        margin-bottom: 24px;
+    }
+    .buisiness .left .item:nth-child(2) {
+        margin: 0px;   
+        margin-bottom: 24px;
+    }
+    .buisiness .right .item:nth-child(1) {
+        margin: 0px;
+        margin-bottom: 24px;
+    }
+    /* .buisiness .item {
+        margin-bottom: 20px;
+    } */
+    .buisiness .left{
+        width: 100%;
+    }
+    .buisiness .right{
+        width: 100%;
+    }
+
+/* ---------------------------------------------- */
+    /* about */
+/* ---------------------------------------------- */
+    .about .flex{
+        display: block;
+    }
+    .about .text{
+        margin:0px;
+        margin-top: 32px;
+        padding:0px 16px; 
+        width: auto;
+    }
+    .about .img{
+        width: 100%;
+    }
+/* ---------------------------------------------- */
+    /* company */
+/* ---------------------------------------------- */
+    .company .wrapper{
+        height: 930px;
+        /* padding: 8px; */
+        /* padding-left: 16px; */
+    }
+    .company .img {
+        position:static;
+    }
+    .company .whitebord{
+        padding: 0px;
+        width: auto;
+        box-sizing: border-box;
+        padding: 32px 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+/* ---------------------------------------------- */
+/* footer */
+/* ---------------------------------------------- */
+
+    footer .wrapper{
+        box-sizing: border-box;
+        padding-left: 16px;
+    }
+    footer .float{
+        display: block;
+    }
+  }
