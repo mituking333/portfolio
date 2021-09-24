@@ -147,6 +147,7 @@ main .skillbox li{
   justify-content: space-between;
   text-align: unset;
   padding: 0px;
+  overflow: hidden;
 }
 .page03 .work_border{
   border-bottom: solid 1px rgb(164, 164, 164); 
@@ -157,9 +158,12 @@ main .skillbox li{
 }
 .page03 img{
   width: 300px;
+  transition: 0.3s;
 }
 .page03 img:hover{
   opacity: 0.2;
+  transform: scale(1.2);
+  transition-duration: 0.3s;
 }
 .page03 .workpanel{
   padding: 20px;
