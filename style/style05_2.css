@@ -22,6 +22,54 @@ span{
 }
 
 /* --------------------------------------- */
+/* スマホ版メニュー*/
+/* --------------------------------------- */
+.phone{
+  width: 100%;
+  padding: 13px 10px;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+  position: relative;
+}
+.phone>span{
+  font-size: 13px;
+  font-weight: bold;
+}
+.phone-menu li a{
+  display: block;
+  padding: 13px 10px;
+  border-bottom: 1px dashed #ebebeb;
+}
+.phone-menu li li{
+  padding-left:26px;
+  border-bottom: 1px dashed #ebebeb;
+}
+.phone-nav{
+  /* transform: translateY(-180%); */
+  z-index: 20;
+  display: none;
+  transition: 1s;
+}
+
+/* ---------------------------------------------- */
+/* チェックBOX */
+/* ---------------------------------------------- */
+.drawer-btn:checked ~ .phone-nav{
+  /* チェックが付いたら元の位置に表示 */
+  /* background-color: burlywood; */
+  display: block;
+  transition: 1s;
+}
+.drawer-btn{
+  position: absolute;
+  left: 12px;
+  top:15px;
+  transform: scale(1.5);
+  opacity: 0;
+  z-index: 2000;
+}
+
+/* --------------------------------------- */
 /* Company NAME*/
 /* --------------------------------------- */
 header .container{
@@ -59,17 +107,19 @@ header .container{
   margin: 0 auto;
   /* background-color: darkgray; */
 }
-.flex{
-  display: flex;
-}
 
 /* --------------------------------------- */
 /* ヘッダーメニュー _上部*/
 /* --------------------------------------- */
+.menuflex{
+  display: flex;
+  justify-content: space-between;
+}
 .header-menu li{
   /* サブメニュー部の基準値 */
   position: relative;
 }
+
 #first_li a{
   border:initial;
   border-top: 2px solid #555;
@@ -145,10 +195,12 @@ header .container{
 /* --------------------------------------- */
 /* トップ _画像（コーヒー）*/
 /* --------------------------------------- */
-.wrapper .flex{
+.wrapper .header-flex{
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
+
 /* 右のメインエリア */
 .wrapper .main{
   width: 70%;
@@ -198,6 +250,7 @@ header .container{
 /* テキスト＋写真 */
 .items01 .flex{
   display: flex;
+  flex-direction: row-reverse;
 }
 .items01 .text{
   width: 60%;
@@ -264,8 +317,6 @@ header .container{
 }
 
 .items03 .left-line .text{
-  /* width: 90%; */
-  /* background-color: navajowhite; */
   margin-left: auto;
   margin: 10px 0 25px 30px;
   padding: 10px 0 10px 15px;
@@ -353,7 +404,7 @@ footer .flex{
   display: flex;
   margin-top: 85px;
 }
-footer p{
+footer .text{
   font-size: 12px;
 }
 .header-left .company{

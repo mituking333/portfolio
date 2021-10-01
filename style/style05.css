@@ -14,12 +14,61 @@ ul{
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #555;
 }
 
 span{
   font-size: 13px;
 }
+
+/* --------------------------------------- */
+/* スマホ版メニュー*/
+/* --------------------------------------- */
+.phone{
+  width: 100%;
+  padding: 13px 10px;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+  position: relative;
+}
+.phone>span{
+  font-size: 13px;
+  font-weight: bold;
+}
+.phone-menu li a{
+  display: block;
+  padding: 13px 10px;
+  border-bottom: 1px dashed #ebebeb;
+}
+.phone-menu li li{
+  padding-left:26px;
+  border-bottom: 1px dashed #ebebeb;
+}
+.phone-nav{
+  /* transform: translateY(-180%); */
+  z-index: 20;
+  display: none;
+  transition: 1s;
+}
+
+/* ---------------------------------------------- */
+/* チェックBOX */
+/* ---------------------------------------------- */
+.drawer-btn:checked ~ .phone-nav{
+  /* チェックが付いたら元の位置に表示 */
+  /* background-color: burlywood; */
+  display: block;
+  transition: 1s;
+}
+.drawer-btn{
+  position: absolute;
+  left: 12px;
+  top:15px;
+  transform: scale(1.5);
+  opacity: 0;
+  z-index: 2000;
+}
+
 
 /* --------------------------------------- */
 /* Company NAME*/
@@ -46,14 +95,13 @@ header .container{
 .header-right p{
   text-align: right;
 }
-.tel{
+header .tel{
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   padding-left: 10px;
 }
-
 .wrapper{
   width: 960px;
   margin: 0 auto;
@@ -248,7 +296,7 @@ footer p{
   font-weight: bold;
 }
 
-.tel{
+footer .tel{
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
@@ -260,6 +308,9 @@ footer p{
 footer .header-right ul{
   display: flex;
 }
+/* footer .header-right #footmenu{
+  display: flex;
+} */
 footer .header-left{
   width: 35%;
 }

@@ -1,0 +1,106 @@
+/* ---------------------------------------------- */
+/* メディアクエリ */
+/* ---------------------------------------------- */
+/* 780px以下の画面幅に効かせたい時*/
+/* @media (max-width: 834px) { */
+@media (max-width: 780PX) {
+
+header .container{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+.header-right p{
+    text-align: center;
+  }
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: darkgray; */
+  }
+/* メニュー非表示 */
+.header-menu{
+    display: none;
+  }
+header .tel{
+    font-size: 20px;
+  }
+/* --------------------------------------- */
+/* トップ _画像（コーヒー）*/
+/* --------------------------------------- */
+.mainImgBox>p{
+  top: 100px;
+  left: 35px;
+  font-size: 12px;
+  }
+.mainImgBox>div{
+  margin: 0px auto;
+  /* background-color: bisque; */
+  }
+.mainImgBox p+p{
+  top: 120px;
+  left: 35px;
+  font-size: 10px;
+  }
+/* ----------------------------------------------- */
+/* ホームページ株式会社フロントページ表示サンプル*/
+/* ----------------------------------------------- */
+.mainHpsample>h3{
+  font-size: 15px;
+  }
+.mainHpsample .flex{
+  display: block;
+  }
+.mainHpsample .text{
+  width: 90%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  }
+.mainHpsample .imgblock{
+  display: none;
+  }
+/* ----------------------------------------------- */
+/* ３画面*/
+/* ----------------------------------------------- */
+.img_items{
+    display: block;
+    /* justify-content:initial; */
+  }
+.img_items .item{
+  width: 100%;
+  }
+.img_items .item p{
+  float: right;
+  }
+/* ----------------------------------------------- */
+/* FOOTER*/
+/* ----------------------------------------------- */
+footer .flex{
+    /* header-leftとheader-rightを横並び */
+      display: block;
+      margin-top: 85px;
+  }
+footer .header-left{
+  width: 100%;
+  text-align: center;
+  }
+footer .header-right{
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  }
+  footer .header-right ul{
+   padding: 0 35px !important;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    /* text-align: center; */
+  }
+}
+
+/* 780pxより大きい場合 */
+@media(min-width:780px) {
+  .phone{
+    display: none;
+  }
+}

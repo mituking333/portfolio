@@ -1,0 +1,123 @@
+/* ---------------------------------------------- */
+/* メディアクエリ */
+/* ---------------------------------------------- */
+/* 780px以下の画面幅に効かせたい時*/
+/* @media (max-width: 834px) { */
+@media (max-width: 780PX) {
+  header .container{
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+  }
+  header .tel{
+      font-size: 20px;
+  }
+  .header-right p{
+      text-align: center;
+  }
+  .wrapper{
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: darkgray; */
+  }
+  /* メニュー非表示 */
+  .header-menu{
+    display: none;
+  }
+
+  /* --------------------------------------- */
+  /* トップ _画像（コーヒー）*/
+  /* --------------------------------------- */
+  .wrapper .header-flex{
+    display: block;
+    /* justify-content: space-between;
+    flex-direction: row-reverse; */
+  }
+
+  /* 右のメインエリア */
+  .wrapper .main{
+    width: 95%;
+    height: auto;
+    margin-top: 34px;
+    /* background-color: khaki; */
+  }
+  /* 左のサイドバー */
+  .wrapper .sidebar{
+    width: 95%;
+    height: auto;
+    margin-top: 34px;
+    
+    /* background-color: lightgreen; */
+  }
+
+  /* テキスト＋写真 */
+  .items01 .flex{
+    display: block;
+  }
+  .items01 .text{
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    /* background-color: lightpink; */
+  }
+  .items01 .imgblock{
+    width: 80%;
+    margin: 24px auto 0px auto;
+  }
+  .items01 img{
+    padding:0px;
+  }
+
+  /* ----------------------------------------------- */
+/* メインエリア 02*/
+/* ----------------------------------------------- */
+/* テキスト＋写真 */
+  .items02 .flex{
+    display: block;
+  }
+  .items02 .text{
+    width: 100%;
+  }
+  .items02 .imgblock{
+    width: 80%;
+    margin: 24px auto 0px auto;
+  }
+  .items02 img{
+    padding: 0px;
+  }
+
+  /* ----------------------------------------------- */
+  /* FOOTER*/
+  /* ----------------------------------------------- */
+  footer .flex{
+    /* header-leftとheader-rightを横並び */
+      display: block;
+      margin-top: 85px;
+  }
+  footer .header-left{
+  width: 100%;
+  text-align: center;
+  }
+  footer .header-right{
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  }
+  footer .header-right ul{
+  padding: 0 35px !important;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    /* text-align: center; */
+  }
+  footer .copyrighttext{
+    font-size: 8px;
+    background-color: cadetblue;
+  }
+}
+
+/* 780pxより大きい場合 */
+@media(min-width:780px) {
+  .phone{
+    display: none;
+  }
+}

@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style/style05.css">
+    <link rel="stylesheet" href="style/style05_media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
   </head>
 
   <body>
@@ -24,8 +27,47 @@
           <p>受付時間: 平日 AM 10:00 〜 PM 5:00</p>
         </div>
       </div>
+
+      <!-- -------------------------------------------------------- -->
+      <!-- 携帯用メニュー追加 -->
+      <!-- -------------------------------------------------------- -->
+      <div class="phone">
+        <!-- ハンバーガーメニュー -->
+        <i class="fas fa-bars "></i>  
+        <i class="fa fa-close"></i>  
+        <span>MENU</span>
+        <!-- イベント　メニュー押下 -->
+        <input type="checkbox" class="drawer-btn">
+
+        <!-- ヘッダナビ -->
+        <div class="phone-nav">
+            <ul class="phone-menu">
+                <li><a href="main05.html">トップページ TOP</a></li>
+                <li><a href="main05_2.html">ごあいさつ Greeting</a>
+                  <ul>
+                    <li>
+                      <a href="main05_2.html" style="border: none"class="submenu"><i class="fas fa-angle-right"></i>代表メッセージ</a>
+                    </li>
+                    <li>
+                      <a href="main05_2.html" style="border: none"class="submenu"><i class="fas fa-angle-right"></i></i>社員の声</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="main05_2.html">サービス概要 Service</a></li>
+                <li><a href="main05_2.html">弊社の取り組み Approach</a></li>
+                <li><a href="main05_2.html">会社概要 Company</a></li>
+                <li><a href="main05_2.html">お問い合わせ Contact</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+      <!-- 携帯用メニュー追加 -->
+      <!-- -------------------------------------------------------- -->
     </header>
+
     <div class="wrapper">
+
+
       <div class="header-menu">
         <ul class="flex">
           <li id="first_li">
@@ -61,7 +103,9 @@
 
       <!-- コーヒー画像 -->
       <div class="mainImgBox">
-        <img src="img/reproduction05/mainImg.jpg" class="mainImg">
+        <div>
+          <img src="img/reproduction05/mainImg.jpg" class="mainImg">
+        </div>
         <p>SAMPLE COFFEE SHOP</p>
         <p>Your Company Slogan</p>
       </div>
@@ -137,7 +181,7 @@
             <p>受付時間: 平日 AM 10:00 〜 PM 5:00</p>
           </div>
           <div class="header-right">
-            <ul>
+            <ul id="footmenu">
               <li><a href="#">ホームページ株式会社</a></li>
               <li><a href="#">株式会社</a></li>
               <li><a href="#">利用規約</a></li>
