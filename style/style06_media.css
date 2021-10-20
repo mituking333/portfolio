@@ -1,0 +1,130 @@
+/* ---------------------------------------------- */
+/* メディアクエリ */
+/* ---------------------------------------------- */
+/* 780px以下の画面幅に効かせたい時*/
+@media (max-width: 780PX) {
+
+    .header-nav{
+        display: none;
+    }
+    .container{  
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-img img{
+        /* width: 1280px; */
+        /* width: auto; */
+        background-size: cover;
+        background-position:center center; 
+        height: 568px;
+        object-fit: cover;
+    }
+
+    .sec02 {
+        display: block;
+    }
+    .sec02 .pic {
+        width: 100%;
+    }
+    .sec02 .text {
+        width: 100%;
+    }
+    .sec02 .text h3 {
+        padding-top: 50px;
+        padding-bottom: 38px;
+    }
+    .sec02 .text>div {
+        width: 90%;
+        margin: 0px auto;
+        /* background-color: indianred; */
+    }
+
+    .sec02 .text p {
+        padding-bottom: 38px;
+    }
+
+    .sec03 .container{
+        display: block;
+        /* justify-content: space-between; */
+    }
+    
+    .sec03 .items{
+        width: 100%;
+    }
+    .sec03 .items h3 {
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+    .sec03 .items img{
+        width: 80%;
+    }
+    .sec03 .items p{
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* margin: 0 auto; */
+    }
+
+    .sec04 .container{
+        width: 90%;
+        padding: 0 auto;
+    }
+    .sec04 .container ul{
+        display: block;
+        /* justify-content: space-between; */
+    }
+    .sec04 .container li{
+        width: 100%;
+        list-style: none;
+        padding-bottom: 40px;
+    }
+    .sec04 li h3 {
+        padding-top: 64px;
+        padding-bottom: 28px;
+    }
+
+    .sec05 .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .sec05 ul {
+        display: block;
+        padding-top: 64px;
+    }
+    
+    .sec05 ul li {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sec05 .map iframe {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .sec05 dt {
+        width: 30%;
+    }
+    .sec05 dd {
+        width: 60%;
+    }
+
+    footer p{
+        /* background-color: rgb(61, 60, 58); */
+        text-align: center;
+        font-size: 14px;
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+}
+
+@media (min-width: 780PX) {
+    .header-cover{
+        display: none;
+    }
+    .header-navmedia{
+        display: none;
+    }
+}
