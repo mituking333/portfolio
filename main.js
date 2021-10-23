@@ -9,8 +9,6 @@
   // 閉じるのID取得
   const close = document.getElementById(`close`);
   
-
-
   // メニューをクリックした場合
   open.addEventListener('click', () => {
     // メニュー画面を開く
@@ -27,11 +25,13 @@
     open.classList.remove('hide');
   });
 
+
   // メニューを選択した場合、閉じる押下と同じ処理を実行
-  function myFunction(event) { 
+  function myFunction() { 
     overlay.classList.remove('show');
     // ハンバーガー三本を消す
     open.classList.remove('hide');
   }
+
   }
   
