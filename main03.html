@@ -18,17 +18,17 @@
             <i class="fa fa-close"></i>  
         </div>
         <!-- イベント　メニュー押下 -->
-        <input type="checkbox" class="drawer-btn">
+        <input type="checkbox"  id="chk1" class="drawer-btn">
 
         <!-- ヘッダナビ -->
         <div class="header-nav">
             <ul class="header-menu">
                 <li><a href="#">TOP</a></li>
-                <li><a href="#message">MESSAGE</a></li>
-                <li><a href="#garelly">GALELLY</a></li>
-                <li><a href="#brand">BRAND</a></li>
-                <li><a href="#project">PROJECT</a></li>
-                <li><a href="#company">COMPANY</a></li>
+                <li><a href="#message" onclick="changeCheckbox('chk1');">MESSAGE</a></li>
+                <li><a href="#garelly" onclick="changeCheckbox('chk1');">GALELLY</a></li>
+                <li><a href="#brand" onclick="changeCheckbox('chk1');">BRAND</a></li>
+                <li><a href="#project" onclick="changeCheckbox('chk1');">PROJECT</a></li>
+                <li><a href="#company" onclick="changeCheckbox('chk1');">COMPANY</a></li>
             </ul>
             <div class="headeer-icons">
                 <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
@@ -169,6 +169,7 @@
         </footer>
     </div>
 
+    <script src="js/main03.js"></script>
 
 </body>
 
