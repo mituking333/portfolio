@@ -4,17 +4,17 @@
 //---------------------------
 {
   // 開くのID取得
-  const open = document.getElementById('open2');
+  const open2 = document.getElementById('open2');
   const overlay = document.querySelector('.overlay');
   // 閉じるのID取得
   const close = document.getElementById(`close`);
   
   // メニューをクリックした場合
-  open.addEventListener('click', () => {
+  open2.addEventListener('click', () => {
     // メニュー画面を開く
     overlay.classList.add('show');
     // ハンバーガー三本を消す
-    open.classList.add('hide');
+    open2.classList.add('hide');
   });
 
 
@@ -22,7 +22,7 @@
   close.addEventListener('click', () => {
     overlay.classList.remove('show');
     // ハンバーガー三本を消す
-    open.classList.remove('hide');
+    open2.classList.remove('hide');
   });
 
 
@@ -30,7 +30,7 @@
   function myFunction() { 
     overlay.classList.remove('show');
     // ハンバーガー三本を消す
-    open.classList.remove('hide');
+    open2.classList.remove('hide');
   }
 
   }
