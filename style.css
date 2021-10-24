@@ -251,7 +251,7 @@ header .sp-menu {
   text-align: center;
 }
 
-.sp-menu #open {
+.sp-menu #open2 {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -269,7 +269,7 @@ header .sp-menu {
 
 /* // ハンバーガー三本を消す
 open.classList.add('hide'); */
-.sp-menu #open.hide{
+.sp-menu #open2.hide{
   display: none;
 }
 

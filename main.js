@@ -4,7 +4,7 @@
 //---------------------------
 {
   // 開くのID取得
-  const open = document.getElementById('open');
+  const open = document.getElementById('open2');
   const overlay = document.querySelector('.overlay');
   // 閉じるのID取得
   const close = document.getElementById(`close`);
