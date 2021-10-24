@@ -251,6 +251,7 @@ header .sp-menu {
   text-align: center;
 }
 
+/* 🈪のスタイリング */
 .sp-menu #open2 {
   position: absolute;
   top: 0px;
@@ -268,12 +269,12 @@ header .sp-menu {
 }
 
 /* // ハンバーガー三本を消す
-open.classList.add('hide'); */
+/* 🈪のスタイリング 非表示*/
 .sp-menu #open2.hide{
   display: none;
 }
 
-/*Menuの表示  */
+/*Menuのスタイリング  */
   .overlay {
     font-size: 32px;
     color:black;
@@ -292,8 +293,7 @@ open.classList.add('hide'); */
     transition: opacity .6s;
   }
 
-    /* // メニュー画面を開く
-  overlay.classList.add('show'); */
+  /* メニュー画面を開く */
   .overlay.show {
     opacity: 1;
     /* マウスを */
