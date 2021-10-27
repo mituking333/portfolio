@@ -199,7 +199,6 @@ footer .applink{
 
 /* copyrightエリア */
 footer .copyright{
-  color:#aaa;
   display: block;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -332,7 +331,10 @@ header .sp-menu {
   transform: translateY(16px);
   transition: opacity 0.3s, transform .3s;
 }
-
+.overlay li a{
+  color: black;
+  text-decoration: none;
+}
 /* 下からふわっと */
 /* overlayがshowの場合 */
 .overlay.show li {
