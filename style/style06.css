@@ -208,7 +208,9 @@ body {
 }
 
 .sec04{
-    background: url(../img/reproduction06/bgSec04.jpg) no-repeat 100% 100% fixed;
+    /* background: url(../img/reproduction06/bgSec04.jpg) no-repeat 100% 100% fixed; */
+    background-image: url(../img/reproduction06/bgSec04.jpg);
+    background-size: 100% 100%;
 }
 
 .sec04 .container{
