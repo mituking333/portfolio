@@ -116,8 +116,8 @@ main .page02 .slkillpanel{
   justify-content: space-between;
 }
 main .page02 .skillbox{
-  padding: 20px;
-  margin: 10px 0px;
+  padding: 24px;
+  margin: 24px 0px;
   width:375px; 
   height: 350px;
   border: 2px solid gainsboro;
@@ -142,6 +142,7 @@ main .skillbox li{
   /* background-color: #aaa; */
   text-align: left;
   font-size: 20px;
+  /* padding-bottom: 8px; */
 }
 
 /* -------------------------------------- */
@@ -437,7 +438,12 @@ main .container{
   main .page02 span{
     font-size: 16px;
   }
-  
+  .page02 .slilltext{
+    width: 95%;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
 /* -------------------------------------- */
 /* 【WORK】 */
 /* -------------------------------------- */
